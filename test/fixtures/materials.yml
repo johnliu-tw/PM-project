@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  M_Id: 1
+  M_Name: MyString
+  M_Cost: 1.5
+  Supplier: MyString
+  S_Address: MyString
+  S_phone: 1
+  Transportation_Time: 1
+
+two:
+  M_Id: 1
+  M_Name: MyString
+  M_Cost: 1.5
+  Supplier: MyString
+  S_Address: MyString
+  S_phone: 1
+  Transportation_Time: 1

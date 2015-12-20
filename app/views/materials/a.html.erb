@@ -1,0 +1,44 @@
+<table>
+  <thead>
+    <tr>
+      <th>M id</th>
+      <th>原料名稱</th>
+      <th>原料成本</th>
+      <th>供應商</th>
+      <th>供應商住址</th>
+      <th>供應商電話</th>
+      <th>運送時間(日)</th>
+      <th>訂購數量</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @materials.each do |material| %>
+      <tr>
+          <% if material.Supplier=='越南可可公司'%>
+        <td><%= material.M_Id %></td>
+        <td><%= material.M_Name %></td>
+        <td><%= material.M_Cost %></td>
+        <td><%= material.Supplier %></td>
+        <td><%= material.S_Address %></td>
+        <td><%= material.S_phone %></td>
+        <td><%= material.Transportation_Time %></td>
+        <td><%= material.Number %></td>
+        <td><%= link_to 'Show', material %></td>
+        <td><%= link_to 'Edit', edit_material_path(material) %></td>
+        <td><%= link_to 'Destroy', material, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% else %>
+      <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+建議搭配組合為
+ <% @materials.each do |material| %>
+ <% if material.Supplier=='越南可可公司'%>
+ <%= material.M_Cost*50 %>個
+ <% else %>
+ <% end %>
+ <% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>M id:</strong>
+  <%= @material.M_Id %>
+</p>
+
+<p>
+  <strong>M name:</strong>
+  <%= @material.M_Name %>
+</p>
+
+<p>
+  <strong>M cost:</strong>
+  <%= @material.M_Cost %>
+</p>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @material.Supplier %>
+</p>
+
+<p>
+  <strong>S address:</strong>
+  <%= @material.S_Address %>
+</p>
+
+<p>
+  <strong>S phone:</strong>
+  <%= @material.S_phone %>
+</p>
+
+<p>
+  <strong>Transportation time:</strong>
+  <%= @material.Transportation_Time %>
+</p>
+
+<%= link_to 'Edit', edit_material_path(@material) %> |
+<%= link_to 'Back', materials_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  P_ID: 1
+  P_Name: MyString
+  P_Inventory: 1
+  Produce_Dated: 2015-12-20
+  Cost: 1.5
+  Price: 1.5
+  Factory: MyString
+
+two:
+  P_ID: 1
+  P_Name: MyString
+  P_Inventory: 1
+  Produce_Dated: 2015-12-20
+  Cost: 1.5
+  Price: 1.5
+  Factory: MyString
