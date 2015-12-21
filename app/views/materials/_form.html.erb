@@ -12,39 +12,43 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :M_Id %><br>
+    <%= f.label :原料編號 %><br>
     <%= f.number_field :M_Id %>
   </div>
   <div class="field">
-    <%= f.label :M_Name %><br>
+    <%= f.label :原料名稱%><br>
     <%= f.text_field :M_Name %>
   </div>
   <div class="field">
-    <%= f.label :M_Cost %><br>
+    <%= f.label :原料成本 %><br>
     <%= f.text_field :M_Cost %>
   </div>
   <div class="field">
-    <%= f.label :Supplier %><br>
+    <%= f.label :供應商 %><br>
     <%= f.text_field :Supplier %>
   </div>
   <div class="field">
-    <%= f.label :S_Address %><br>
+    <%= f.label :供應商住址 %><br>
     <%= f.text_field :S_Address %>
   </div>
   <div class="field">
-    <%= f.label :S_phone %><br>
+    <%= f.label :供應商電話 %><br>
     <%= f.number_field :S_phone %>
   </div>
   <div class="field">
-    <%= f.label :Transportation_Time %><br>
+    <%= f.label :運輸時間 %><br>
     <%= f.number_field :Transportation_Time %>
   </div>
   <div class="field">
-    <%= f.label :condition %>(限定0-1)<br>
-    <%= f.number_field :condition %>
+    <%= f.label :合格 %>(是為1否為0)<br>
+    <%= f.number_field :Quality %>
+  </div>
+  <div class="field">
+    <%= f.label :製成品 %><br>
+    <%= f.text_field :Result %>
   </div>
    <div class="field">
-    <%= f.label :Number %><br>
+    <%= f.label :製造數量 %><br>
     <%= f.number_field :Number %>
   </div>
   <div class="actions">

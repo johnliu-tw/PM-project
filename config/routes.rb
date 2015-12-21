@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'products#index'
-   get "materials/:id" => 'materials#produce'
+   
    get "data" => 'materials#data'
    get "a" => 'materials#a'
    

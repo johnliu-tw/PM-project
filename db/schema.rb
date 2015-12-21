@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151220113706) do
+ActiveRecord::Schema.define(version: 20151220143144) do
 
   create_table "materials", force: :cascade do |t|
     t.integer  "M_Id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20151220113706) do
     t.boolean  "condition"
     t.integer  "Number"
     t.string   "Result"
+    t.integer  "Quality"
   end
 
   create_table "products", force: :cascade do |t|

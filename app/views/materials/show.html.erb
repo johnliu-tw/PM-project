@@ -1,39 +1,43 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>M id:</strong>
+  <strong>ID</strong>
   <%= @material.M_Id %>
 </p>
 
 <p>
-  <strong>M name:</strong>
+  <strong>原料名稱</strong>
   <%= @material.M_Name %>
 </p>
 
 <p>
-  <strong>M cost:</strong>
+  <strong>原料成本</strong>
   <%= @material.M_Cost %>
 </p>
 
 <p>
-  <strong>Supplier:</strong>
+  <strong>供應商</strong>
   <%= @material.Supplier %>
 </p>
 
 <p>
-  <strong>S address:</strong>
+  <strong>供應商地址</strong>
   <%= @material.S_Address %>
 </p>
 
 <p>
-  <strong>S phone:</strong>
+  <strong>供應商電話</strong>
   <%= @material.S_phone %>
 </p>
 
 <p>
-  <strong>Transportation time:</strong>
+  <strong>運輸時間</strong>
   <%= @material.Transportation_Time %>
 </p>
-
-<%= link_to 'Edit', edit_material_path(@material) %> |
-<%= link_to 'Back', materials_path %>
+<p>
+  <strong>製成品</strong>
+  <%= @material.Result %>
+</p>
+<%= link_to '編輯', edit_material_path(@material) %> |
+<%= link_to '合格原料', materials_path %>
+<%= link_to '原料資料庫', data_path %>

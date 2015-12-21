@@ -75,6 +75,6 @@ class MaterialsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def material_params
-      params.require(:material).permit(:M_Id, :M_Name, :M_Cost, :Supplier, :S_Address, :S_phone, :Transportation_Time, :Condition, :Number, :Result)
+      params.require(:material).permit(:M_Id, :M_Name, :M_Cost, :Supplier, :S_Address, :S_phone, :Transportation_Time, :Condition, :Number, :Result, :Quality)
     end
 end

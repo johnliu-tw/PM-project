@@ -1,15 +1,15 @@
-合格原料
+<h2>合格原料</h2>
 
 <table>
   <thead>
     <tr>
-      <th>M id</th>
-      <th>M name</th>
-      <th>M cost</th>
-      <th>Supplier</th>
-      <th>S address</th>
-      <th>S phone</th>
-      <th>Transportation time</th>
+      <th>ID</th>
+      <th>原料名稱</th>
+      <th>原料成本</th>
+      <th>供應商</th>
+      <th>運送時間(日)</th>
+      <th>訂購數量</th>
+      <th>製成品</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,21 +17,22 @@
   <tbody>
     <% @materials.each do |material| %>
       <tr>
+        <% if material.Quality == 1 %>
         <td><%= material.M_Id %></td>
         <td><%= material.M_Name %></td>
         <td><%= material.M_Cost %></td>
         <td><%= material.Supplier %></td>
-        <td><%= material.S_Address %></td>
-        <td><%= material.S_phone %></td>
         <td><%= material.Transportation_Time %></td>
         <td><%= material.Number %></td>
-        <td><%= link_to 'Show', material %></td>
-        <td><%= link_to 'Edit', edit_material_path(material) %></td>
-        <td><%= link_to 'Destroy', material, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= material.Result %></td>
+        <td><%= link_to '原料明細', material %></td>
+      <% else %>
+      <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <%= link_to '生產小泡芙', a_path %></br>
+<%= link_to '生產系統', root_path %>
 <%= link_to '原料資料庫', data_path %>
